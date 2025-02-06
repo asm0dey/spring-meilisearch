@@ -2,6 +2,8 @@ plugins {
     java
     `maven-publish`
     signing
+    id("org.cyclonedx.bom") version "2.1.0"
+    id("org.scm-manager.license") version "0.8.0"
 }
 
 repositories {
@@ -24,6 +26,7 @@ version = "0.0.1"
 tasks.test {
     useJUnitPlatform()
 }
+
 
 val javadocJar by tasks.registering(Jar::class) {
     from(tasks.javadoc)
@@ -95,4 +98,23 @@ publishing {
 
 signing {
     sign(publishing.publications["mavenJava"])
+}
+
+tasks.cyclonedxBom {
+    includeConfigs = listOf("runtimeClasspath")
+    skipConfigs = listOf("compileClasspath", "testCompileClasspath")
+    projectType = "java-library"
+    schemaVersion = "1.6"
+    destination = project.file("build/reports")
+    outputName = "bom"
+    outputFormat = "json"
+    includeBomSerialNumber = false
+    includeLicenseText = true
+    includeMetadataResolution = true
+    componentVersion = version.toString()
+    componentName = "spring-meilisearch"
+}
+
+license {
+    header = resources.text.fromFile(project.file("HEADER.txt"))
 }
