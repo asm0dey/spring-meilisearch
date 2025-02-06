@@ -1,4 +1,5 @@
 HELP.md
+kls_database.db
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
