@@ -20,7 +20,7 @@ dependencies {
     testImplementation(libs.junit.jupiter)
     testImplementation(libs.assertj.core)
 }
-
+group = "com.github.asm0dey"
 version = "0.0.1"
 
 tasks.test {
@@ -103,7 +103,7 @@ signing {
 tasks.cyclonedxBom {
     includeConfigs = listOf("runtimeClasspath")
     skipConfigs = listOf("compileClasspath", "testCompileClasspath")
-    projectType = "java-library"
+    projectType = "library"
     schemaVersion = "1.6"
     destination = project.file("build/reports")
     outputName = "bom"
