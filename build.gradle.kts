@@ -98,6 +98,7 @@ publishing {
 
 signing {
     sign(publishing.publications["mavenJava"])
+    useGpgCmd()
 }
 
 tasks.cyclonedxBom {

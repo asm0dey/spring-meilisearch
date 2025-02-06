@@ -17,8 +17,8 @@
  * under the License.
  */
 
-import com.github.asm0dey.opdsko_spring.meilisearch.MeilisearchAutoConfiguration;
-import com.github.asm0dey.opdsko_spring.meilisearch.MeilisearchConnectionDetails;
+import com.github.asm0dey.meilisearch.MeilisearchAutoConfiguration;
+import com.github.asm0dey.meilisearch.MeilisearchConnectionDetails;
 import com.meilisearch.sdk.Client;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanCreationException;

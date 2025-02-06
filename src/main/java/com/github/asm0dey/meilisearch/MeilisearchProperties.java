@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package com.github.asm0dey.opdsko_spring.meilisearch;
+package com.github.asm0dey.meilisearch;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
