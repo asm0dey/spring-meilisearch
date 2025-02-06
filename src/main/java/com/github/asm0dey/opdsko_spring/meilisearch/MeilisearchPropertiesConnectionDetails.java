@@ -14,7 +14,7 @@ public class MeilisearchPropertiesConnectionDetails implements MeilisearchConnec
      * which retrieves connection details for a Meilisearch instance from the provided
      * {@link MeilisearchProperties} object.
      *
-     * @param properties the {@link MeilisearchProperties} 
+     * @param properties the {@link MeilisearchProperties}
      */
     public MeilisearchPropertiesConnectionDetails(MeilisearchProperties properties) {
         this.properties = properties;
