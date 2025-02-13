@@ -1,5 +1,5 @@
 # Spring Boot Meilisearch Autoconfiguration
-This library provides Spring Boot autoconfiguration for Meilisearch, making it easy to integrate Meilisearch search engine into your Spring Boot applications.
+This library provides Spring Boot autoconfiguration for [Meilisearch](https://www.meilisearch.com/), making it easy to integrate Meilisearch search engine into your Spring Boot applications.
 ## Overview
 Spring Boot Meilisearch Autoconfiguration enables automatic configuration of Meilisearch client in Spring Boot applications, with support for:
 - Automatic configuration of Meilisearch client
