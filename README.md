@@ -1,3 +1,5 @@
+![Maven Central Version](https://img.shields.io/maven-central/v/com.github.asm0dey/spring-meilisearch?style=for-the-badge&logo=meilisearch&link=https%3A%2F%2Fcentral.sonatype.com%2Fartifact%2Fcom.github.asm0dey%2Fspring-meilisearch%2Foverview)
+
 # Spring Boot Meilisearch Autoconfiguration
 This library provides Spring Boot autoconfiguration for [Meilisearch](https://www.meilisearch.com/), making it easy to integrate Meilisearch search engine into your Spring Boot applications.
 ## Overview
