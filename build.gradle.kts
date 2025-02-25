@@ -1,3 +1,5 @@
+import org.gradle.api.JavaVersion.VERSION_17
+
 plugins {
     java
     `maven-publish`
@@ -21,7 +23,7 @@ dependencies {
     testImplementation(libs.assertj.core)
 }
 group = "com.github.asm0dey"
-version = "0.0.1"
+version = "0.0.2"
 
 tasks.test {
     useJUnitPlatform()
@@ -118,4 +120,9 @@ tasks.cyclonedxBom {
 
 license {
     header = resources.text.fromFile(project.file("HEADER.txt"))
+}
+
+tasks.withType<JavaCompile> {
+    sourceCompatibility = VERSION_17.toString()
+    targetCompatibility = VERSION_17.toString()
 }
