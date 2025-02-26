@@ -4,7 +4,7 @@ plugins {
     java
     `maven-publish`
     signing
-    id("org.cyclonedx.bom") version "2.1.0"
+    id("org.cyclonedx.bom") version "2.2.0"
     id("org.scm-manager.license") version "0.8.0"
 }
 
