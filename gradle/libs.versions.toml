@@ -11,7 +11,7 @@ spring-boot = "3.4.2"
 
 assertj-core = { module = "org.assertj:assertj-core", version = "3.27.3" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version = "5.11.4" }
-meilisearch = "com.meilisearch.sdk:meilisearch-java:0.14.2"
+meilisearch = "com.meilisearch.sdk:meilisearch-java:0.21.0"
 spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure", version.ref = "spring-boot" }
 spring-boot-docker-compose = { module = "org.springframework.boot:spring-boot-docker-compose", version.ref = "spring-boot" }
 spring-boot-test = { module = "org.springframework.boot:spring-boot-test", version.ref = "spring-boot" }
